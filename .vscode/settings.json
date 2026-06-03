@@ -1,0 +1,4 @@
+{
+    "js/ts.preferences.importModuleSpecifierEnding": "auto",
+    "js/ts.tsdk.path": "node_modules\\typescript\\lib"
+}
